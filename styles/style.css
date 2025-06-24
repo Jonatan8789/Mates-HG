@@ -1,0 +1,96 @@
+/*select + propiedad + valor
+selector {
+propiedad:valor
+}
+*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+ background-color: #384b33;
+ color:beige;
+}
+header nav {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: antiquewhite;
+}
+
+footer{
+    background-color: #384b33;
+}
+
+footer h3{
+    color: beige;
+}
+
+footer p {
+    color: #add1b0;
+}
+
+footer form{
+    color: #add1b0;
+}
+
+p {
+  color: rgb(1, 36, 7) ;
+  font-size: 15px;
+  margin: 20px;
+  font-family:  "Oswald", sans-serif;
+}
+
+body{
+background-color: rgb(177, 190, 184);
+
+}
+
+.titulos{
+    text-decoration: none;
+    text-align: center;
+
+}
+
+
+ul{
+    list-style: none;
+    color: beige;
+    
+}
+
+.filtro_productos{
+ color: rgb(1, 36, 7) ;   
+}
+
+a {
+    text-decoration: none;
+    color:beige;
+}
+
+.button{
+    color:white;
+    background-color: #1a581f;
+    border-radius: 20%;
+}
+
+#fondo_principal{
+    width: 100%;
+}
+
+.foto_descripcion_empresa{
+    border-radius: 40%;
+}
+
+.ppff{
+    margin: 3%;
+    border: 3px;
+    border-style:solid;
+    border-color: #031f05;
+}
+
+.productos{
+    width: 20%;
+}
