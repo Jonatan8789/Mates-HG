@@ -2,33 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="./styles/style.css">
+    <!--Link archivos de estilos-->
+    <link rel="stylesheet" href="/styles/style.css">
+    <!--Link de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <title>HG-MATES</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="fondo_encabezado">
+        <nav class="navbar navbar-expand-lg navbar-custom px-3">
     <!--Este es el titulo de mi pagina-->
-            <h1 class="titulos">HGMATES</h1>
-            <img src="./assets/logos/logoHG.png" alt="Logo marca">
-            <ul>
-                <li><a href="">INICIO</a></li>
-                <li><a href="./pages/productos.html">PRODUCTOS</a></li>
-                <li><a href="./pages/sobrenosotros.html">SOBRE NOSOTROS</a></li>
-                <li><a href="./pages/clientes.html">CLIENTES</a></li>
-                <li><a href="./pages/ppff.html">PREGUNTAS FRECUENTES</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-            </ul>
-            <img src="../assets/iconos/avatar.png" alt="icono login">
-            <img src="../assets/iconos/carrito.png" alt="icono carrito de compras"> 
+                <h1 class="titulos">HGMATES</h1>
+                <img id="logo_principal" src="./assets/logos/logoHG.png" alt="Logo marca">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item"><a class="nav-link" href="">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/productos.html">PRODUCTOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/clientes.html">CLIENTES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/ppff.html">PREGUNTAS FRECUENTES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/contacto.html">CONTACTO</a></li>
+                </ul>
+                <form class="d-flex align-items-center" role="search">
+                    <div class="input-group search-input">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                        <span class="input-group-text search-shortcut">Ctrl K</span>
+                    </div>
+                </form>
+                <img src="../assets/iconos/avatar.png" alt="icono login">
+                <img src="../assets/iconos/carrito.png" alt="icono carrito de compras"> 
+            </div>
         </nav>
     </header>
     <main>
-        <img id="fondo_principal" src="./assets/fondos/fondo.png" alt="fondo mate con promocion">
         <h2 class="titulos">Beneficios del Mate</h2>
         <section>
             <div>
@@ -48,58 +63,76 @@
                 <p>El mate puede ayudar a mantener la salud cardiovascular al promover la circulación sanguínea y reducir los niveles de colesterol malo. </p>
             </div>
         </section>
-
+<!--Seccion de prodcutos destacados-->
         <section>
+
             <h2 class="titulos">DESTACADOS</h2> 
-            <div>
-                <h3>MATES</h3>
-                <img src="./assets/productos/mateImperial.jpg" alt="imagen de imperial marron">
-                <button class="button"> Detalles</button>
-            </div>
-            <div>
-                <h3>TERMOS</h3>
-                <img src="./assets/productos/termo1.jpg" alt="imagen de termo negro">
-                <button class="button"> Detalles</button>
-            </div>
-            <div>
-                <h3>CUCHILLOS</h3>
-                <img src="./assets/productos/cuchillo1.png" alt="imagen de cuchillo">
-                <button class="button"> Detalles</button>
+            <div class="tarjetas">
+                <div class="card tarjetas2">
+                    <img src="./assets/productos/mateImperial.jpg" class="card-img-top" alt="imagen de imperial marron">
+                    <div class="card-body">
+                        <h5 class="card-title">MATES</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias numquam ut dolor culpa</p>
+                        <a href="#" class="btn btn-primary">Agregar a Carrito</a>
+                    </div>
+                </div>
+                <div class="card tarjetas2">
+                    <img src="./assets/productos/termo1.jpg" class="card-img-top" alt="imagen de termo negro">
+                    <div class="card-body">
+                        <h5 class="card-title">TERMOS</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias numquam ut dolor culpa</p>
+                        <a href="#" class="btn btn-primary">Agregar a Carrito</a>
+                    </div>
+                </div>
+                <div class="card tarjetas2" >
+                    <img src="./assets/productos/cuchillo1.png" class="card-img-top" alt="imagen de cuchillo">
+                    <div class="card-body">
+                        <h5 class="card-title">CUCHILLOS</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias numquam ut dolor culpa</p>
+                        <a href="#" class="btn btn-primary">Agregar a Carrito</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main> 
-    <footer>
-        <h3>NUESTRAS REDES</h3>
-        <a href="https://www.x.com">
-            <img src="./assets/redesSociales/logoX.png" alt="logo twitter">
-        </a>
-        <a href="https://www.instagram.com/hgmates">
-            <img src="./assets/redesSociales/logoIg.png" alt="logo ig">
-        </a>   
-        <a href="https://www.facebook.com">
-            <img src="./assets/redesSociales/logoFb.png" alt="logo facebook">
-        </a>     
-            <a href="https://www.tiktok.com">
-            <img src="./assets/redesSociales/tiktok.png" alt="logo facebook">
-        </a>    
-        
-        <H3>CONTACTENOS</H3>
-        <p>TELEFONO: 11-33665545 </BR>
-        DIRECCION: AV DIAZ MOSCONI 1524 </BR>
-        LOCALIDAD: LOMAS DEL MIRADOR </BR>
-        PROVINCIA : BS AS  </BR>
-        CORREO ELECTRONICO: HGMATES@GMAIL.COM 
-        </p>
-
-        <H3>NEWSLETTER</H3>
-        <P>SUSCRIBASE </P>
-        <form method="post" action="/send">
-        CORREO: <input name="correo">
-        <input type="submit" value="Suscribir">
-        </form>
-
-        <p>Diseño por Jonatan</p>
+    <footer class="pie_de_pagina">
+        <div class="pie_de_pagina_grid">
+            <div>
+                <h3>NUESTRAS REDES</h3>
+                <a href="https://www.x.com">
+                    <img src="./assets/redesSociales/logoX.png" alt="logo twitter">
+                </a>
+                <a href="https://www.instagram.com/hgmates">
+                    <img src="./assets/redesSociales/logoIg.png" alt="logo ig">
+                </a>   
+                <a href="https://www.facebook.com">
+                    <img src="./assets/redesSociales/logoFb.png" alt="logo facebook">
+                </a>     
+                    <a href="https://www.tiktok.com">
+                    <img src="./assets/redesSociales/tiktok.png" alt="logo facebook">
+                </a>    
+            </div>
+            <div>
+                <H3>CONTACTENOS</H3>
+                <p>TELEFONO: 11-33665545 </BR>
+                DIRECCION: AV DIAZ MOSCONI 1524 </BR>
+                LOCALIDAD: LOMAS DEL MIRADOR </BR>
+                PROVINCIA : BS AS  </BR>
+                CORREO ELECTRONICO: HGMATES@GMAIL.COM 
+                </p>
+            </div>
+            <div>
+                <H3>NEWSLETTER</H3>
+                <P>SUSCRIBASE </P>
+                <form method="post" action="/send"> CORREO: <input name="correo">
+                <input type="submit" value="Suscribir">
+                </form>
+            </div>
+        </div>
+        <div class="pie_de_pagina_copy">
+            <p>Diseño por Jonatan</p>
+        </div>    
     </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script> </script>
 </body>
 </html>

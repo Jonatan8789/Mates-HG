@@ -6,26 +6,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!--Link archivos de estilos-->
     <link rel="stylesheet" href="../styles/style.css">
-    <title>HG MATES - PREG.C.</title>
-</head>
+    <!--Link de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+ </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar navbar-expand-lg navbar-custom px-3">
     <!--Este es el titulo de mi pagina-->
-            <h1>PREGUNTAS FRECUENTES</h1>
-            <img src="../assets/logos/logoHG.png" alt="Logo marca">
- 
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./productos.html">PRODUCTOS</a></li>
-                <li><a href="./sobrenosotros.html">SOBRE NOSOTROS</a></li>
-                <li><a href="./clientes.html">CLIENTES</a></li>
-                <li><a href="">PREGUNTAS FRECUENTES</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
-            <img src="../assets/iconos/avatar.png" alt="icono login">
-            <img src="../assets/iconos/carrito.png" alt="icono carrito de compras">       
+                <h1 class="titulos">HGMATES</h1>
+                <img id="logo_principal" src="../assets/logos/logoHG.png" alt="Logo marca">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item"><a href="../index.html">INICIO</a></li>
+                    <li class="nav-item"><a href="./productos.html">PRODUCTOS</a></li>
+                    <li class="nav-item"><a href="./sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                    <li class="nav-item"><a href="./clientes.html">CLIENTES</a></li>
+                    <li class="nav-item"><a href="">PREGUNTAS FRECUENTES</a></li>
+                    <li class="nav-item"><a href="./contacto.html">CONTACTO</a></li>
+                </ul>
+                <form class="d-flex align-items-center" role="search">
+                    <div class="input-group search-input">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                        <span class="input-group-text search-shortcut">Ctrl K</span>
+                    </div>
+                </form>
+                <img src="../assets/iconos/avatar.png" alt="icono login">
+                <img src="../assets/iconos/carrito.png" alt="icono carrito de compras"> 
+            </div>
         </nav>
     </header>
     <main>
@@ -62,36 +71,42 @@
             </div>
         </section>
     </main>
-    <footer>
-        <h3>NUESTRAS REDES</h3>
-        <a href="https://www.x.com">
-            <img src="../assets/redesSociales/logoX.png" alt="logo twitter">
-        </a>
-        <a href="https://www.instagram.com/hgmates">
-            <img src="../assets/redesSociales/logoIg.png" alt="logo ig">
-        </a>   
-        <a href="https://www.facebook.com">
-            <img src="../assets/redesSociales/logoFb.png" alt="logo facebook">
-        </a>     
-            <a href="https://www.tiktok.com">
-            <img src="../assets/redesSociales/tiktok.png" alt="logo tiktok">
-        </a>    
-        
-        <H3>CONTACTENOS</H3>
-        <p>TELEFONO: 11-33665545 </BR>
-        DIRECCION: AV DIAZ MOSCONI 1524 </BR>
-        LOCALIDAD: LOMAS DEL MIRADOR </BR>
-        PROVINCIA : BS AS  </BR>
-        CORREO ELECTRONICO: HGMATES@GMAIL.COM 
-        </p>
-
-        <H3>NEWSLETTER</H3>
-        <P>SUSCRIBASE </P>
-        <form method="post" action="/send">
-        CORREO: <input name="correo">
-        <input type="submit" value="Suscribir">
-        </form>
-
-        <p>Diseño por Jonatan</p>
+    <footer class="pie_de_pagina">
+        <div class="pie_de_pagina_grid">
+            <div>
+                <h3>NUESTRAS REDES</h3>
+                <a href="https://www.x.com">
+                    <img src="../assets/redesSociales/logoX.png" alt="logo twitter">
+                </a>
+                <a href="https://www.instagram.com/hgmates">
+                    <img src="../assets/redesSociales/logoIg.png" alt="logo ig">
+                </a>   
+                <a href="https://www.facebook.com">
+                    <img src="../assets/redesSociales/logoFb.png" alt="logo facebook">
+                </a>     
+                    <a href="https://www.tiktok.com">
+                    <img src="../assets/redesSociales/tiktok.png" alt="logo facebook">
+                </a>    
+            </div>
+            <div>
+                <H3>CONTACTENOS</H3>
+                <p>TELEFONO: 11-33665545 </BR>
+                DIRECCION: AV DIAZ MOSCONI 1524 </BR>
+                LOCALIDAD: LOMAS DEL MIRADOR </BR>
+                PROVINCIA : BS AS  </BR>
+                CORREO ELECTRONICO: HGMATES@GMAIL.COM 
+                </p>
+            </div>
+            <div>
+                <H3>NEWSLETTER</H3>
+                <P>SUSCRIBASE </P>
+                <form method="post" action="/send"> CORREO: <input name="correo">
+                <input type="submit" value="Suscribir">
+                </form>
+            </div>
+        </div>
+        <div class="pie_de_pagina_copy">
+            <p>Diseño por Jonatan</p>
+        </div>    
     </footer></body>
 </html>
