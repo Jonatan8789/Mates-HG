@@ -288,8 +288,9 @@ input[type="submit"]:hover {
   section .tarjetas {
     grid-template-columns: 1fr; /* Una sola columna en móviles */
   }
-
-
+     header nav ul a{
+      color: whitesmoke;
+ }
       footer{
         display:flex
       }
