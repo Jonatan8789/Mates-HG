@@ -292,13 +292,13 @@ input[type="submit"]:hover {
   min-height: 100vh;
 }
 
-body {
+body .clientes{
   display: flex;
   flex-direction: column;
   background-color: rgb(177, 190, 184);
 }
 
-main {
+main Cliente_Main{
   flex: 1;
   min-height: 80vh;
   margin-bottom: 40px;
