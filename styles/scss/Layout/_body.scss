@@ -1,0 +1,8 @@
+body {
+  background-color: $color-fondo;
+  font-family: $fuente-principal;
+  min-height: 100vh;
+  &.clientes {
+    @include flex(column);
+  }
+}

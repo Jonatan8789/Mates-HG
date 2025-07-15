@@ -1,0 +1,9 @@
+section .tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  @include media-query(tablet) {
+    grid-template-columns: 1fr;
+  }
+}

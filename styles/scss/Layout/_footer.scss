@@ -1,0 +1,32 @@
+footer {
+  background-color: $color-footer;
+
+  h3 {
+    color: $color-titulo;
+  }
+
+  p, form {
+    color: $color-footer-texto;
+  }
+
+  .pie_de_pagina {
+    @include flex(space-between);
+    padding: 20px;
+
+    &_grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    &_copy {
+      text-align: right;
+      font-size: 14px;
+      color: #e0e0e0;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+}

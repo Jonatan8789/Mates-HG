@@ -1,0 +1,9 @@
+@include media-query(tablet) {
+  nav ul a {
+    color: whitesmoke;
+  }
+
+  footer {
+    display: flex;
+  }
+}
