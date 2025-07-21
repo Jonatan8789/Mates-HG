@@ -1,3 +1,13 @@
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 .producto {
   display: flex;
   flex-direction: row;
@@ -8,7 +18,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
   margin-bottom: 20px;
-  max-width: 100%;
+  max-width: 800px;
   transition: transform 0.3s ease;
 
   &:hover {
@@ -46,10 +56,23 @@
       border-radius: 999px;
       cursor: pointer;
       font-size: 0.95rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
 
       &:hover {
         background-color: #004f00;
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .producto {
+    flex-direction: column;
+    text-align: center;
+
+    .info {
+      align-items: center;
     }
   }
 }
