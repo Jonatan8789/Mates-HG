@@ -1,13 +1,13 @@
-@import 'base/variables';
-@import  'base/mixins';
+@import '../scss/base/variables';
+@import  '../scss/base/mixins';
 
-@import  'layout/body';
-@import  'layout/main';
-@import  'layout/footer';
-@import 'layout/header';
+@import  '../scss/Layout/body';
+@import  '../scss/Layout/main';
+@import  '../scss/Layout/footer';
+@import  '../scss/Layout/header';
 
-@import  'components/tarjetas';
-@import  'components/form';
-@import 'components/productos';
-@import 'components/beneficios';
-@import  'mediaqueries';
+@import  '../scss/components/tarjetas';
+@import  '../scss/components/form';
+@import '../scss/components/productos';
+@import '../scss/components/beneficios';
+@import  '../scss/mediaqueries';
