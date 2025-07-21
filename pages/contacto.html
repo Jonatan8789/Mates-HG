@@ -45,45 +45,70 @@
         </nav>
     </header>
     
-    <main>
-    <!--formularios-->
-        <form action="/submit" method="post"><!--estiqueta contenedora-->
-            <label for="nombre">Nombre:</label>
-                <input type="text" name="" id="nombre" placeholder="Escriba su nombre aqui...">
-             </br>
-            <label for="apellido">Apellido:</label>
-                <input type="text" name="" id="Apellido" placeholder="Escriba su Apellido aqui...">
-            </br>
-            <label for="email">Correo Electronico:</label>
-                <input type="email" name="" id="email" placeholder="Escriba su Correo aqui...">
-            </br>
-            <label for="telefono">Telefono:</label>
-                <input type="text" name="telefono" id="telefono">
-            </br>
-            <label for="Opcion1">Hombre</label>
-            <input type="radio" id="Opcion1" name="Grupo1" value="Hombre">
+    <main class="container my-5">
+    <div class="card shadow p-4">
+        <h2 class="text-center mb-4">Formulario de Contacto</h2>
+        <form action="/submit" method="post" class="row g-3">
+        <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre...">
+        </div>
 
-            <label for="Opcion2">Mujer</label>
-            <input type="radio" id="Opcion2" name="Grupo1" value="Mujer">
+        <div class="col-md-6">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Escriba su apellido...">
+        </div>
 
-            <label for="Opcion3">Sin Identificar</label>
-            <input type="radio" id="Opcion3" name="Grupo1" value="PND">
-            </br>
-            <label for="suscribe">Suscribirse</label>
-            <input type="checkbox" name="" id="">
-            </br>
-            <label for="pais">Pais de Residencia</label>
-            <select name="" id="">
-                <option value="">Brasil</option>
-                <option value="">Argentina</option>
-                <option value="">Uruguay</option>
-                <option value="">Paraguay</option>
-                <option value="">Bolivia</option>
+        <div class="col-md-6">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="Ej: ejemplo@gmail.com">
+        </div>
+
+        <div class="col-md-6">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" placeholder="Ej: +54 9 11 1234 5678">
+        </div>
+
+        <div class="col-12">
+            <label class="form-label">Género</label>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genero" id="opcion1" value="Hombre">
+            <label class="form-check-label" for="opcion1">Hombre</label>
+            </div>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genero" id="opcion2" value="Mujer">
+            <label class="form-check-label" for="opcion2">Mujer</label>
+            </div>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genero" id="opcion3" value="No especifica">
+            <label class="form-check-label" for="opcion3">Sin Identificar</label>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="suscribir">
+            <label class="form-check-label" for="suscribir">Suscribirse al Newsletter</label>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="pais" class="form-label">País de Residencia</label>
+            <select class="form-select" id="pais">
+            <option selected>Argentina</option>
+            <option>Brasil</option>
+            <option>Uruguay</option>
+            <option>Paraguay</option>
+            <option>Bolivia</option>
             </select>
+        </div>
 
-            <input class="button" type="submit" value="Enviar">   
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-success px-4">Enviar</button>
+        </div>
+        </form>
+    </div>
     </main>
-</form>
 
     <footer class="pie_de_pagina">
         <div class="pie_de_pagina_grid">
