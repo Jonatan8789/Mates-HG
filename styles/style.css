@@ -215,21 +215,15 @@ input[type=submit]:hover {
   border-radius: 8px;
   object-fit: cover;
 }
-.producto .info {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.producto .info h3 {
+.producto h3 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: bold;
 }
-.producto .info p {
-  margin: 0;
+.producto span {
   font-size: 0.95rem;
 }
-.producto .info button {
+.producto button {
   background-color: #006400;
   color: white;
   padding: 10px 16px;
@@ -240,7 +234,7 @@ input[type=submit]:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
-.producto .info button:hover {
+.producto button:hover {
   background-color: #004f00;
 }
 
@@ -248,8 +242,6 @@ input[type=submit]:hover {
   .producto {
     flex-direction: column;
     text-align: center;
-  }
-  .producto .info {
     align-items: center;
   }
 }
