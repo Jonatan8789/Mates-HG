@@ -102,20 +102,19 @@ header #logo_principal {
   color: white;
 }
 
-.faq-section {
+.ppff-section {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
-  background-color: #b4e5af;
 }
-.faq-section .faq-item {
-  background-color: #f9f9f9;
+.ppff-section .ppff-item {
+  background-color: #b4e5af;
   border-radius: 8px;
   margin-bottom: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
-.faq-section .faq-item summary {
+.ppff-section .ppff-item summary {
   font-weight: bold;
   cursor: pointer;
   padding: 15px 20px;
@@ -123,20 +122,20 @@ header #logo_principal {
   position: relative;
   list-style: none;
 }
-.faq-section .faq-item summary::marker {
+.ppff-section .ppff-item summary::marker {
   display: none;
 }
-.faq-section .faq-item summary::after {
+.ppff-section .ppff-item summary::after {
   content: "+";
   position: absolute;
   right: 20px;
   font-size: 1.5rem;
   transition: transform 0.3s ease;
 }
-.faq-section .faq-item[open] summary::after {
+.ppff-section .ppff-item[open] summary::after {
   transform: rotate(45deg);
 }
-.faq-section .faq-item p {
+.ppff-section .ppff-item p {
   padding: 0 20px 15px;
   animation: fadein 0.3s ease;
   font-size: 1rem;
