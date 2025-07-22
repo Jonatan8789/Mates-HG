@@ -12,6 +12,8 @@ footer {
   .pie_de_pagina {
     @include flex(space-between);
     padding: 20px;
+    flex-direction: column;
+    align-items: center;
 
     &_grid {
       display: grid;
