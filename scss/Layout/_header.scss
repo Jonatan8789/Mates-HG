@@ -6,8 +6,26 @@ header {
 
     .nav-item .nav-link { 
       color: white; 
+      font-size: 20px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .nav-item{
+      &:hover {
+      background-color: $color-hover;
+      color: white;
+      border-radius: 15px;
+    }
   }
 
+ .icono-contenedor{
+    display: flex;
+    gap: 40px;
+  }
+  .icono{
+    font-size: 50px;
+    color:whitesmoke;
+  }
   h1{
     display: none;
   }
@@ -18,20 +36,15 @@ header {
     gap: 20px;
     text-align: center;
 
-    &:hover {
-        background-color: $color-hover;
-        color: white;
-      }
     }
-  }
 
+}
+}
   #logo_principal {
     width: 10%;
     height: auto;
     padding-right: 50px;
   }
-
-
 .fondo_encabezado {
   background-image: url(../assets/fondos/mate_paisaje_3.jpg);
   background-size: cover;
@@ -39,4 +52,3 @@ header {
   height: 90vh;
   color: white;
   }
- }

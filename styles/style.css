@@ -83,6 +83,21 @@ header .navbar {
 }
 header .navbar .nav-item .nav-link {
   color: white;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header .navbar .nav-item:hover {
+  background-color: #103824;
+  color: white;
+  border-radius: 15px;
+}
+header .navbar .icono-contenedor {
+  display: flex;
+  gap: 40px;
+}
+header .navbar .icono {
+  font-size: 50px;
+  color: whitesmoke;
 }
 header .navbar h1 {
   display: none;
@@ -97,16 +112,14 @@ header .navbar ul {
   gap: 20px;
   text-align: center;
 }
-header .navbar ul:hover {
-  background-color: #103824;
-  color: white;
-}
-header #logo_principal {
+
+#logo_principal {
   width: 10%;
   height: auto;
   padding-right: 50px;
 }
-header .fondo_encabezado {
+
+.fondo_encabezado {
   background-image: url(../assets/fondos/mate_paisaje_3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
