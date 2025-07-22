@@ -1,6 +1,5 @@
 header {
   .navbar {
-    @include flex(row, space-between, center);
     color: antiquewhite;
     background-color: rgba(0, 0, 0, 0.4);
 
@@ -21,6 +20,8 @@ header {
  .icono-contenedor{
     display: flex;
     gap: 40px;
+    justify-content: center;
+    
   }
   .icono{
     font-size: 50px;
@@ -32,7 +33,6 @@ header {
 
   ul {
     list-style: none;
-    @include flex(row, center, center);
     gap: 20px;
     text-align: center;
 

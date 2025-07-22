@@ -2,6 +2,12 @@ section .tarjetas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  max-width: 70%;
+  margin: 0 auto;
+
+  .carrito{
+    background-color: $color-principal;
+  }
 
   @include media-query(tablet) {
     grid-template-columns: 1fr;

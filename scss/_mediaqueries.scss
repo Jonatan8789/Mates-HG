@@ -3,7 +3,51 @@
     color: whitesmoke;
   }
 
-  footer {
+footer .pie_de_pagina_grid {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    form{
+      margin:0;
+      width: 100vw;
+    }
   }
+
+    #logo_principal {
+    width: 10%;
+    height: auto;
+    padding-right: 50px;
+  }
+}
+
+@include media-query(mobile) {
+  header .navbar{
+    padding-bottom: 20px;
+  }
+  
+  nav ul a {
+    color: whitesmoke;
+  }
+
+    #logo_principal {
+    width: 25%;
+    height: auto;
+    padding-right: 50px;
+  }
+
+  footer .pie_de_pagina_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    form{
+      margin:0;
+      width: 100vw;
+    }
+  }
+
+ 
 }

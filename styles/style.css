@@ -25,6 +25,8 @@ main .titulos {
 
 footer {
   background-color: #384b33;
+  margin-top: 40px;
+  padding: 1rem;
 }
 footer h3 {
   color: beige;
@@ -32,10 +34,16 @@ footer h3 {
 footer p, footer form {
   color: #add1b0;
 }
+footer .redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 footer .redes a {
-  font-size: 2rem;
+  font-size: 4rem;
   margin: 0 10px;
-  color: #333;
+  color: beige;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -56,9 +64,19 @@ footer .pie_de_pagina {
   align-items: center;
 }
 footer .pie_de_pagina_grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .pie_de_pagina_grid .contactenos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .pie_de_pagina_grid .newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 footer .pie_de_pagina_copy {
   text-align: right;
@@ -68,16 +86,8 @@ footer .pie_de_pagina_copy {
 footer .pie_de_pagina img {
   width: 30px;
 }
-footer .pie_de_pagina_grid {
-  align-items: center;
-}
 
 header .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
   color: antiquewhite;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -94,6 +104,7 @@ header .navbar .nav-item:hover {
 header .navbar .icono-contenedor {
   display: flex;
   gap: 40px;
+  justify-content: center;
 }
 header .navbar .icono {
   font-size: 50px;
@@ -104,11 +115,6 @@ header .navbar h1 {
 }
 header .navbar ul {
   list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
   gap: 20px;
   text-align: center;
 }
@@ -224,6 +230,11 @@ section .tarjetas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  max-width: 70%;
+  margin: 0 auto;
+}
+section .tarjetas .carrito {
+  background-color: rgb(1, 36, 7);
 }
 @media (max-width: 768px) {
   section .tarjetas {
@@ -283,7 +294,6 @@ form input[type=submit] {
   gap: 20px;
   justify-content: center;
   padding: 20px;
-  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -386,8 +396,43 @@ form input[type=submit] {
   nav ul a {
     color: whitesmoke;
   }
-  footer {
+  footer .pie_de_pagina_grid {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  footer .pie_de_pagina_grid form {
+    margin: 0;
+    width: 100vw;
+  }
+  #logo_principal {
+    width: 10%;
+    height: auto;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 480px) {
+  header .navbar {
+    padding-bottom: 20px;
+  }
+  nav ul a {
+    color: whitesmoke;
+  }
+  #logo_principal {
+    width: 25%;
+    height: auto;
+    padding-right: 50px;
+  }
+  footer .pie_de_pagina_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  footer .pie_de_pagina_grid form {
+    margin: 0;
+    width: 100vw;
   }
 }
 
