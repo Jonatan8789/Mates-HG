@@ -9,9 +9,17 @@ footer {
     color: $color-footer-texto;
   }
 
-  a{
-    text-decoration: none;
-  }
+ .redes a {
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.redes a:hover {
+  color: #2aa850; /* o el color que uses en tu marca */
+}
   .Newsletter{
     background-color: darkolivegreen;
   }
@@ -36,5 +44,8 @@ footer {
     img {
       width: 30px;
     }
+  }
+  .pie_de_pagina_grid{
+    align-items: center;
   }
 }
