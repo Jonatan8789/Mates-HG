@@ -1,8 +1,12 @@
 header {
   .navbar {
     @include flex(row, space-between, center);
-    color: antiquewhite;
+    color: antiquewhite; 
     background-color: rgba(0, 0, 0, 0.4);
+
+    .nav-item .nav-link { 
+      color: white; 
+    }
   }
 
   h1{
@@ -15,29 +19,18 @@ header {
     gap: 20px;
     text-align: center;
 
-    div ul li a {
-      background-color: $color-secundario;
+    
+    &:hover {
+      background-color: $color-hover;
       color: white;
-      padding: 8px 20px;
-      border-radius: 6px;
-      font-weight: bold;
-      font-family: sans-serif;
-      font-size: 10px;
-      text-align: center;
-      text-decoration: none;
-
-      &:hover {
-        background-color: $color-hover;
-        color: white;
-      }
     }
   }
+}
 
-  #logo_principal {
-    width: 10%;
-    height: auto;
-    padding-right: 50px;
-  }
+#logo_principal {
+  width: 10%;
+  height: auto;
+  padding-right: 50px;
 }
 
 .fondo_encabezado {
@@ -45,5 +38,5 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
-  color: white;
+  color: white; 
 }
