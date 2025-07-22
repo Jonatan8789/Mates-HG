@@ -9,6 +9,12 @@ footer {
     color: $color-footer-texto;
   }
 
+  a{
+    text-decoration: none;
+  }
+  .Newsletter{
+    background-color: darkolivegreen;
+  }
   .pie_de_pagina {
     @include flex(space-between);
     padding: 20px;
