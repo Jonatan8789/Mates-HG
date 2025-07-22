@@ -32,6 +32,12 @@ footer h3 {
 footer p, footer form {
   color: #add1b0;
 }
+footer a {
+  text-decoration: none;
+}
+footer .Newsletter {
+  background-color: darkolivegreen;
+}
 footer .pie_de_pagina {
   display: flex;
   flex-direction: space-between;
@@ -64,6 +70,9 @@ header .navbar {
   flex-wrap: nowrap;
   color: antiquewhite;
   background-color: rgba(0, 0, 0, 0.4);
+}
+header h1 {
+  display: none;
 }
 header ul {
   list-style: none;
