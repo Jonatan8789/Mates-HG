@@ -84,10 +84,10 @@ header .navbar {
 header .navbar .nav-item .nav-link {
   color: white;
 }
-header h1 {
+header .navbar h1 {
   display: none;
 }
-header ul {
+header .navbar ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -97,18 +97,16 @@ header ul {
   gap: 20px;
   text-align: center;
 }
-header ul:hover {
+header .navbar ul:hover {
   background-color: #103824;
   color: white;
 }
-
-#logo_principal {
+header #logo_principal {
   width: 10%;
   height: auto;
   padding-right: 50px;
 }
-
-.fondo_encabezado {
+header .fondo_encabezado {
   background-image: url(../assets/fondos/mate_paisaje_3.jpg);
   background-size: cover;
   background-repeat: no-repeat;

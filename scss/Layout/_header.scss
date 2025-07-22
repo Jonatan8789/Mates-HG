@@ -1,12 +1,11 @@
 header {
   .navbar {
     @include flex(row, space-between, center);
-    color: antiquewhite; 
+    color: antiquewhite;
     background-color: rgba(0, 0, 0, 0.4);
 
     .nav-item .nav-link { 
       color: white; 
-    }
   }
 
   h1{
@@ -19,24 +18,25 @@ header {
     gap: 20px;
     text-align: center;
 
-    
     &:hover {
-      background-color: $color-hover;
-      color: white;
+        background-color: $color-hover;
+        color: white;
+      }
     }
   }
-}
 
-#logo_principal {
-  width: 10%;
-  height: auto;
-  padding-right: 50px;
-}
+  #logo_principal {
+    width: 10%;
+    height: auto;
+    padding-right: 50px;
+  }
+
 
 .fondo_encabezado {
   background-image: url(../assets/fondos/mate_paisaje_3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
-  color: white; 
-}
+  color: white;
+  }
+ }
