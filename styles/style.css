@@ -288,76 +288,142 @@ form input[type=submit] {
   transition: background-color 0.3s;
 }
 
-.productos-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  color: #333;
 }
 
-.producto {
+.contenedor {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.filtros {
+  flex: 0 0 250px;
+  background: #fff;
+  padding: 1rem;
+  border-right: 1px solid #ccc;
+}
+.filtros h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.filtros ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.filtros ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+.filtros ul li:hover {
+  color: #086d00;
+}
+.filtros ul li.categoria {
+  font-weight: bold;
+  position: relative;
+}
+.filtros ul li.categoria::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  transition: transform 0.3s;
+}
+.filtros ul li.categoria.open::after {
+  content: "-";
+}
+.filtros ul li ul.subcategorias {
+  margin-top: 0.3rem;
+  padding-left: 1rem;
+  display: none;
+}
+.filtros ul li ul.subcategorias li {
+  font-weight: normal;
+  border: none;
+  padding: 0.3rem 0;
+}
+.filtros ul li.open ul.subcategorias {
+  display: block;
+}
+.filtros .ordenar {
+  margin-bottom: 1rem;
+}
+.filtros .ordenar label {
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.filtros .ordenar select {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.filtros .rango-precio label {
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 1rem;
+}
+.filtros .rango-precio input {
+  width: 100%;
+  margin: 0.3rem 0;
+}
+
+.productos {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 20px;
-  background: #f8f8f8;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  margin-bottom: 20px;
-  max-width: 800px;
-  transition: transform 0.3s ease;
-}
-.producto:hover {
-  transform: scale(1.01);
-}
-.producto img {
-  width: 160px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
-.producto h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-.producto span {
-  font-size: 0.95rem;
-}
-.producto button {
-  background-color: #006400;
-  color: white;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  font-size: 0.95rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-}
-.producto button:hover {
-  background-color: #004f00;
 }
 
-@media (max-width: 768px) {
-  .producto {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
+.producto-card {
+  background: white;
+  border-radius: 30px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-@media (max-width: 600px) {
-  .producto {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .producto img {
-    width: 100%;
-  }
+.producto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
+.producto-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.producto-card h4 {
+  margin: 0.8rem 0 0.3rem;
+  font-size: 1.1rem;
+}
+.producto-card p {
+  margin: 0 0 0.5rem;
+}
+.producto-card .descuento {
+  font-size: 0.9rem;
+  color: green;
+}
+.producto-card button {
+  background-color: #086d00;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.producto-card button:hover {
+  background-color: #0a8a00;
+}
+
 .beneficios-section {
   padding: 40px 20px;
   background-color: #f5f5f5;
@@ -393,6 +459,17 @@ form input[type=submit] {
 }
 
 @media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+  }
+  .productos-grid {
+    grid-template-columns: 1fr;
+  }
+  .filtros {
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
   nav ul a {
     color: whitesmoke;
   }

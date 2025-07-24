@@ -1,4 +1,18 @@
 @include media-query(tablet) {
+  .contenedor {
+      flex-direction: column;
+    }
+
+    .productos-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .filtros {
+      max-width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ccc;
+    }
+    
   nav ul a {
     color: whitesmoke;
   }
@@ -20,6 +34,8 @@ footer .pie_de_pagina_grid {
     height: auto;
     padding-right: 50px;
   }
+
+
 }
 
 @include media-query(mobile) {
