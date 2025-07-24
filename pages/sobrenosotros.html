@@ -1,117 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
     <!--Link archivos de estilos-->
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css" />
     <!--Link de bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>HG MATES - SOBRE NOSOTROS</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Este es el titulo de mi pagina-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-custom px-3">
-    <!--Este es el titulo de mi pagina-->
-                <h1 class="titulos">HGMATES</h1>
-                <img id="logo_principal" src="../assets/logos/logoHG.png" alt="Logo marca">
+      <nav class="navbar navbar-expand-lg navbar-custom px-3">
+        <!--Este es el titulo de mi pagina-->
+        <h1 class="titulos">HGMATES</h1>
+        <img
+          id="logo_principal"
+          src="../assets/logos/logoHG.png"
+          alt="Logo marca"
+        />
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMain"
+          aria-controls="navbarMain"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Sobre Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ppff.html">Preguntas Frecuentes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                </ul>
-                <div class="icono-contenedor">
-                    <i class="fas fa-user-circle icono"></i> 
-                    <i class="fas fa-shopping-cart icono"></i>
-                </div>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clientes.html">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ppff.html">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <div class="icono-contenedor">
+            <i class="fas fa-user-circle icono"></i>
+            <i class="fas fa-shopping-cart icono"></i>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <h1 class="sobrenosotros_princial titulos">SOBRE NOSOTROS</h1>
-        <section class="sobrenosotros_principal">
-            <p class="bloque_contenido" data-aos="fade-up"
-     data-aos-duration="3000">HG Mates es una empresa argentina dedicada a la venta de mates artesanales y accesorios relacionados con la cultura del mate. 
-                Nacida con la pasión por mantener viva una tradición tan arraigada en nuestro país, MateArte se posiciona como un puente entre lo clásico y lo moderno, 
-                ofreciendo productos únicos que combinan diseño, funcionalidad y un profundo respeto por la identidad cultural. Nos especializamos en mates de calabaza forrados en cuero,
-                 mates de madera torneada, acero inoxidable, cerámica, y una variedad de bombillas y termos de excelente calidad. 
-                 Nuestros productos están pensados tanto para el uso cotidiano como para regalos empresariales o personalizados. 
-                 Creemos que tomar mate es mucho más que una costumbre: es compartir, es pausa, es vínculo. Por eso, cada uno de nuestros mates cuenta una historia, 
-                 llevando consigo el trabajo de artesanos locales y el compromiso con materiales duraderos. Además, promovemos el consumo consciente, 
-                 utilizando insumos sostenibles y procesos responsables. MateArte atiende tanto al público general como a revendedores y empresas, 
-                 con envíos a todo el país y al exterior. A través de nuestras redes sociales y tienda online, buscamos estar cerca del cliente, 
-                 ofreciendo atención personalizada y asesoramiento. 
-                Nuestra misión es llevar el mate argentino a cada rincón del mundo, con productos que reflejan identidad, calidez y calidad.</p>
+      <h1 class="sobrenosotros_princial titulos">SOBRE NOSOTROS</h1>
+      <section class="sobrenosotros_principal">
+        <p class="bloque_contenido" data-aos="fade-up" data-aos-duration="3000">
+          HG Mates es una empresa argentina dedicada a la venta de mates
+          artesanales y accesorios relacionados con la cultura del mate. Nacida
+          con la pasión por mantener viva una tradición tan arraigada en nuestro
+          país, MateArte se posiciona como un puente entre lo clásico y lo
+          moderno, ofreciendo productos únicos que combinan diseño,
+          funcionalidad y un profundo respeto por la identidad cultural. Nos
+          especializamos en mates de calabaza forrados en cuero, mates de madera
+          torneada, acero inoxidable, cerámica, y una variedad de bombillas y
+          termos de excelente calidad. Nuestros productos están pensados tanto
+          para el uso cotidiano como para regalos empresariales o
+          personalizados. Creemos que tomar mate es mucho más que una costumbre:
+          es compartir, es pausa, es vínculo. Por eso, cada uno de nuestros
+          mates cuenta una historia, llevando consigo el trabajo de artesanos
+          locales y el compromiso con materiales duraderos. Además, promovemos
+          el consumo consciente, utilizando insumos sostenibles y procesos
+          responsables. MateArte atiende tanto al público general como a
+          revendedores y empresas, con envíos a todo el país y al exterior. A
+          través de nuestras redes sociales y tienda online, buscamos estar
+          cerca del cliente, ofreciendo atención personalizada y asesoramiento.
+          Nuestra misión es llevar el mate argentino a cada rincón del mundo,
+          con productos que reflejan identidad, calidez y calidad.
+        </p>
 
-            <img class="foto_descripcion_empresa" src="../assets/mapa/mapa.png" alt="mapa de direccion del local" data-aos="fade-up"
-     data-aos-duration="3000">
-            <img class="foto_descripcion_empresa" src="../assets/fondos/equipo.jpg" alt="equipo de trabajo" data-aos="fade-up"
-     data-aos-duration="3000">
+        <img
+          class="foto_descripcion_empresa"
+          src="../assets/mapa/mapa.png"
+          alt="mapa de direccion del local"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        />
+        <img
+          class="foto_descripcion_empresa"
+          src="../assets/fondos/equipo.jpg"
+          alt="equipo de trabajo"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        />
 
-            <p class="bloque_contenido" data-aos="fade-up"
-     data-aos-duration="3000">El proceso de elaboración de nuestros mates combina técnicas artesanales tradicionales con estándares modernos de calidad. 
-            Todo comienza con la selección cuidadosa de las materias primas. En el caso de los mates de calabaza, elegimos frutos secos y curados naturalmente, 
-            libres de rajaduras, que luego se limpian, lijan y se someten al proceso de curado interno para asegurar su resistencia y durabilidad. Posteriormente, 
-            se forran a mano con cuero genuino o sintético, cosido artesanalmente, y se les agrega una virola metálica en la boca para mayor resistencia. 
-            Los mates de madera se tallan en torno, se lijan cuidadosamente y se tratan con aceites naturales para realzar la veta y protegerlos de la humedad. 
-            En los de acero y cerámica, priorizamos materiales aptos para el contacto con alimentos, resistentes a altas temperaturas, y de fácil limpieza. 
-            Las bombillas también son parte clave del proceso: ofrecemos modelos de acero inoxidable, bronce niquelado y alpaca, todas con filtro desmontable. 
-            Cada producto pasa por un riguroso control de calidad antes de ser embalado. En todos los casos, priorizamos el trabajo manual, la atención al detalle y 
-            la originalidad de los diseños. Cada mate es único, no sólo por su forma y textura, sino porque representa horas de dedicación de nuestros artesanos, 
-            quienes imprimen en cada pieza un sello de identidad y pasión por lo que hacen.</p>
-        </section>
+        <p class="bloque_contenido" data-aos="fade-up" data-aos-duration="3000">
+          El proceso de elaboración de nuestros mates combina técnicas
+          artesanales tradicionales con estándares modernos de calidad. Todo
+          comienza con la selección cuidadosa de las materias primas. En el caso
+          de los mates de calabaza, elegimos frutos secos y curados
+          naturalmente, libres de rajaduras, que luego se limpian, lijan y se
+          someten al proceso de curado interno para asegurar su resistencia y
+          durabilidad. Posteriormente, se forran a mano con cuero genuino o
+          sintético, cosido artesanalmente, y se les agrega una virola metálica
+          en la boca para mayor resistencia. Los mates de madera se tallan en
+          torno, se lijan cuidadosamente y se tratan con aceites naturales para
+          realzar la veta y protegerlos de la humedad. En los de acero y
+          cerámica, priorizamos materiales aptos para el contacto con alimentos,
+          resistentes a altas temperaturas, y de fácil limpieza. Las bombillas
+          también son parte clave del proceso: ofrecemos modelos de acero
+          inoxidable, bronce niquelado y alpaca, todas con filtro desmontable.
+          Cada producto pasa por un riguroso control de calidad antes de ser
+          embalado. En todos los casos, priorizamos el trabajo manual, la
+          atención al detalle y la originalidad de los diseños. Cada mate es
+          único, no sólo por su forma y textura, sino porque representa horas de
+          dedicación de nuestros artesanos, quienes imprimen en cada pieza un
+          sello de identidad y pasión por lo que hacen.
+        </p>
+      </section>
     </main>
     <footer class="pie_de_pagina">
-        <div class="pie_de_pagina_grid">
-            <div class="contactenos">
-                <h3>Contactenos</h3>
-                <p>Telefono: 11-33665545 </p>
-                <p>Direccion: AV DIAZ MOSCONI 1524 </p>
-                <p>Localidad: LOMAS DEL MIRADOR </p>
-                <p>Provincia : BS AS </p>
-                <p>Correo Electronico: HGMATES@GMAIL.COM </p>
-            </div>
-            <div class="redes">
-                <h3>Nuestras Redes</h3>
-                <div>
-                    <a href="https://www.instagram.com/hgmates" target="_blank" class="fa-brands fa-instagram"></a>
-                    <a href="https://www.facebook.com" target="_blank" class="fa-brands fa-facebook"></a>
-                    <a href="https://www.tiktok.com" target="_blank" class="fa-brands fa-tiktok"></a>
-                </div>
-            </div>
+      <div class="pie_de_pagina_grid">
+        <div class="contactenos">
+          <h3>Contactenos</h3>
+          <p>Telefono: 11-33665545</p>
+          <p>Direccion: AV DIAZ MOSCONI 1524</p>
+          <p>Localidad: LOMAS DEL MIRADOR</p>
+          <p>Provincia : BS AS</p>
+          <p>Correo Electronico: HGMATES@GMAIL.COM</p>
+        </div>
+        <div class="redes">
+          <h3>Nuestras Redes</h3>
+          <div>
+            <a
+              href="https://www.instagram.com/hgmates"
+              target="_blank"
+              class="fa-brands fa-instagram"
+            ></a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="fa-brands fa-facebook"
+            ></a>
+            <a
+              href="https://www.tiktok.com"
+              target="_blank"
+              class="fa-brands fa-tiktok"
+            ></a>
+          </div>
+        </div>
 
-            <div class="newsletter">
-                <h3>Newsletter</h3>
-                <P>Suscribase</p>
-                <form method="post" action="/send" class="Newsletter"> CORREO: <input name="correo">
-                    <input type="submit" value="Suscribir">
-                </form>
-            </div>
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+          <p>Suscribase</p>
+          <form method="post" action="/send" class="Newsletter">
+            CORREO: <input name="correo" />
+            <input type="submit" value="Suscribir" />
+          </form>
         </div>
-        <div class="pie_de_pagina_copy">
-            <p>Diseño por Jonatan</p>
-        </div>
+      </div>
+      <div class="pie_de_pagina_copy">
+        <p>Diseño por Jonatan</p>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-         AOS.init();
+      AOS.init();
     </script>
-</body>
+  </body>
 </html>

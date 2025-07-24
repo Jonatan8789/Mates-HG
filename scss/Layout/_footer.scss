@@ -7,27 +7,28 @@ footer {
     color: $color-titulo;
   }
 
-  p, form {
+  p,
+  form {
     color: $color-footer-texto;
   }
- .redes{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap:10px;
- }
- .redes a {
-  font-size: 4rem;
-  margin: 0 10px;
-  color:$color-titulo;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .redes a {
+    font-size: 4rem;
+    margin: 0 10px;
+    color: $color-titulo;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
 
-.redes a:hover {
-  color: #2aa850; /* o el color que uses en tu marca */
-}
-  .Newsletter{
+  .redes a:hover {
+    color: #2aa850; /* o el color que uses en tu marca */
+  }
+  .Newsletter {
     background-color: darkolivegreen;
   }
 
@@ -41,14 +42,14 @@ footer {
       display: flex;
       justify-content: space-around;
       align-items: center;
-    
-      .contactenos{
-         display: flex;
-         flex-direction: column;
+
+      .contactenos {
+        display: flex;
+        flex-direction: column;
         align-items: center;
       }
 
-      .newsletter{
+      .newsletter {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -65,5 +66,4 @@ footer {
       width: 30px;
     }
   }
-
 }

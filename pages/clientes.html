@@ -1,118 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
     <!--Link archivos de estilos-->
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css" />
     <!--Link de bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>HG MATES - Clientes</title>
-</head>
-<body class="clientes">
+  </head>
+  <body>
     <!--Este es el titulo de mi pagina-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-custom px-3">
-    <!--Este es el titulo de mi pagina-->
-                <h1 class="titulos">HGMATES</h1>
-                <img id="logo_principal" src="../assets/logos/logoHG.png" alt="Logo marca">
+      <nav class="navbar navbar-expand-lg navbar-custom px-3">
+        <!--Este es el titulo de mi pagina-->
+        <h1 class="titulos">HGMATES</h1>
+        <img
+          id="logo_principal"
+          src="../assets/logos/logoHG.png"
+          alt="Logo marca"
+        />
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMain"
+          aria-controls="navbarMain"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Clientes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ppff.html">Preguntas Frecuentes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                </ul>
-                <div class="icono-contenedor">
-                    <i class="fas fa-user-circle icono"></i> 
-                    <i class="fas fa-shopping-cart icono"></i>
-                </div>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="">Clientes</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="ppff.html">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <div class="icono-contenedor">
+            <i class="fas fa-user-circle icono"></i>
+            <i class="fas fa-shopping-cart icono"></i>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main class="Cliente_Main">
-        <h1 class="titulos">NUESTROS CLIENTES</h1>
-            <div class="container mt-5">
-                <h3 class="text-center mb-4">Nuestras Marcas</h3>
-                <div id="brandCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                    <!-- Slide 1 -->
-                        <div class="carousel-item active">
-                            <div class="brand-container">
-                                <img src="../assets/logos/mc.png" class="brand-logo" alt="McDonald's">
-                                <img src="../assets/logos/toyota.png" class="brand-logo" alt="Toyota">
-                                <img src="../assets/logos/pepsi.png" class="brand-logo" alt="Pepsi">
-                                <img src="../assets/logos/bmw.png" class="brand-logo" alt="BMW">
-                                <img src="../assets/logos/apple.png" class="brand-logo" alt="Apple">
-                            </div>
-                        </div>
-
-                        <!-- Slide 2 -->
-                        <div class="carousel-item">
-                            <div class="brand-container">
-                                <img src="../assets/logos/adidas.png" class="brand-logo" alt="Adidas">
-                                <img src="../assets/logos/nbc.png" class="brand-logo" alt="NBC">
-                                <img src="../assets/logos/volkswagen.png" class="brand-logo" alt="Volkswagen">
-                                <img src="../assets/logos/mercedes.png" class="brand-logo" alt="Mercedes-Benz">
-                                <img src="../assets/logos/google.png" class="brand-logo" alt="Google">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Controles -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
+    <main>
+      <h1 class="titulos">NUESTROS CLIENTES</h1>
+      <div class="container mt-5">
+        <section class="logos-clientes">
+          <h3 class="text-center mb-4">Nuestras Marcas</h3>
+          <div class="logo-grid">
+            <img
+              src="../assets/logos/mc.png"
+              alt="McDonald's"
+              class="logo-cliente" data-aos="fade-up"
+            />
+            <img
+              src="../assets/logos/toyota.png"
+              alt="Toyota"
+              class="logo-cliente" data-aos="fade-up"
+            />
+            <img
+              src="../assets/logos/pepsi.png"
+              alt="Pepsi"
+              class="logo-cliente" data-aos="fade-up"
+            />
+            <img src="../assets/logos/bmw.png" alt="BMW" class="logo-cliente" data-aos="fade-up" />
+            <img
+              src="../assets/logos/apple.png"
+              alt="Apple"
+              class="logo-cliente" data-aos="fade-up"
+            />
+            <img
+              src="../assets/logos/adidas.png"
+              alt="Adidas"
+              class="logo-cliente" data-aos="fade-up"
+            />
+            <img src="../assets/logos/nbc.png" alt="NBC" class="logo-cliente" data-aos="fade-up" />
+            <img
+              src="../assets/logos/volkswagen.png"
+              alt="Volkswagen"
+              class="logo-cliente" data-aos="fade-up"
+            />
+            <img
+              src="../assets/logos/mercedes.png"
+              alt="Mercedes-Benz"
+              class="logo-cliente" data-aos="fade-up"
+            />
+            <img
+              src="../assets/logos/google.png"
+              alt="Google"
+              class="logo-cliente" data-aos="fade-up"
+            />
+          </div>
+        </section>
+        <section class="testimonios-clientes">
+          <h3>Lo que dicen nuestros clientes</h3>
+          <div class="testimonios">
+            <div class="testimonio">
+              <p>"HG Mates siempre responde rápido y con excelente calidad."</p>
+              <span>– Carla M., Mercedes-Benz</span>
             </div>
+            <div class="testimonio">
+              <p>
+                "Nuestros empleados aman los productos. ¡Gracias por la atención
+                personalizada!"
+              </p>
+              <span>– Martín A., Google</span>
+            </div>
+          </div>
+        </section>
+        <section class="cta-clientes">
+          <h4>¿Querés que tu empresa también forme parte?</h4>
+          <a href="/contacto" class="btn-cta">Contactanos</a>
+        </section>
+      </div>
     </main>
 
     <footer class="pie_de_pagina">
-        <div class="pie_de_pagina_grid">
-            <div class="contactenos">
-                <h3>Contactenos</h3>
-                <p>Telefono: 11-33665545 </p>
-                <p>Direccion: AV DIAZ MOSCONI 1524 </p>
-                <p>Localidad: LOMAS DEL MIRADOR </p>
-                <p>Provincia : BS AS </p>
-                <p>Correo Electronico: HGMATES@GMAIL.COM </p>
-            </div>
-            <div class="redes">
-                <h3>Nuestras Redes</h3>
-                <div>
-                    <a href="https://www.instagram.com/hgmates" target="_blank" class="fa-brands fa-instagram"></a>
-                    <a href="https://www.facebook.com" target="_blank" class="fa-brands fa-facebook"></a>
-                    <a href="https://www.tiktok.com" target="_blank" class="fa-brands fa-tiktok"></a>
-                </div>
-            </div>
+      <div class="pie_de_pagina_grid">
+        <div class="contactenos">
+          <h3>Contactenos</h3>
+          <p>Telefono: 11-33665545</p>
+          <p>Direccion: AV DIAZ MOSCONI 1524</p>
+          <p>Localidad: LOMAS DEL MIRADOR</p>
+          <p>Provincia : BS AS</p>
+          <p>Correo Electronico: HGMATES@GMAIL.COM</p>
+        </div>
+        <div class="redes">
+          <h3>Nuestras Redes</h3>
+          <div>
+            <a
+              href="https://www.instagram.com/hgmates"
+              target="_blank"
+              class="fa-brands fa-instagram"
+            ></a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="fa-brands fa-facebook"
+            ></a>
+            <a
+              href="https://www.tiktok.com"
+              target="_blank"
+              class="fa-brands fa-tiktok"
+            ></a>
+          </div>
+        </div>
 
-            <div class="newsletter">
-                <h3>Newsletter</h3>
-                <P>Suscribase</p>
-                <form method="post" action="/send" class="Newsletter"> CORREO: <input name="correo">
-                    <input type="submit" value="Suscribir">
-                </form>
-            </div>
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+          <p>Suscribase</p>
+          <form method="post" action="/send" class="Newsletter">
+            CORREO: <input name="correo" />
+            <input type="submit" value="Suscribir" />
+          </form>
         </div>
-        <div class="pie_de_pagina_copy">
-            <p>Diseño por Jonatan</p>
-        </div>
+      </div>
+      <div class="pie_de_pagina_copy">
+        <p>Diseño por Jonatan</p>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>     
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

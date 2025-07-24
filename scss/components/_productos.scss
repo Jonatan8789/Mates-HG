@@ -43,14 +43,14 @@ body {
         position: relative;
 
         &::after {
-          content: '+';
+          content: "+";
           position: absolute;
           right: 0;
           transition: transform 0.3s;
         }
 
         &.open::after {
-          content: '-';
+          content: "-";
         }
       }
 

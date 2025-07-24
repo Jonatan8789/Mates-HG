@@ -15,7 +15,9 @@ main {
   flex: 1;
   min-height: 80vh;
 }
-main h1, main h2, main h3 {
+main h1,
+main h2,
+main h3 {
   text-align: center;
   font-family: "Oswald", sans-serif;
 }
@@ -31,7 +33,8 @@ footer {
 footer h3 {
   color: beige;
 }
-footer p, footer form {
+footer p,
+footer form {
   color: #add1b0;
 }
 footer .redes {
@@ -240,6 +243,102 @@ section .tarjetas .carrito {
   section .tarjetas {
     grid-template-columns: 1fr;
   }
+}
+
+.testimonios-clientes {
+  background-color: #f9f9f9;
+  padding: 3rem 1rem;
+  text-align: center;
+  padding-top: 30px;
+}
+.testimonios-clientes h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.testimonios-clientes .testimonios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.testimonios-clientes .testimonio {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonios-clientes .testimonio p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.testimonios-clientes .testimonio span {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  font-weight: bold;
+}
+.testimonios-clientes .testimonio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.logos-clientes {
+  padding: 3rem 1rem;
+  background-color: #fff;
+  text-align: center;
+}
+.logos-clientes h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: 700;
+}
+.logos-clientes .logo-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.logos-clientes .logo-cliente {
+  max-width: 100px;
+  filter: grayscale(100%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.logos-clientes .logo-cliente:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.cta-clientes {
+  background-color: #9ba89b;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 3rem;
+}
+.cta-clientes h4 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.cta-clientes .btn-cta {
+  background-color: #6a8054;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.cta-clientes .btn-cta:hover {
+  background-color: #556943;
 }
 
 form {
@@ -488,6 +587,13 @@ body {
     height: auto;
     padding-right: 50px;
   }
+  .testimonios-clientes .testimonios {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonios-clientes .testimonio {
+    max-width: 90%;
+  }
 }
 @media (max-width: 480px) {
   header .navbar {
@@ -510,6 +616,13 @@ body {
   footer .pie_de_pagina_grid form {
     margin: 0;
     width: 100vw;
+  }
+  .testimonios-clientes .testimonios {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonios-clientes .testimonio {
+    max-width: 90%;
   }
 }
 

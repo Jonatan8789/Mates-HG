@@ -8,19 +8,23 @@
 
 @mixin media-query($breakpoint) {
   @if $breakpoint == tablet {
-    @media (max-width: $breakpoint-tablet) { @content; }
+    @media (max-width: $breakpoint-tablet) {
+      @content;
+    }
   } @else if $breakpoint == mobile {
-    @media (max-width: $breakpoint-mobile) { @content; }
+    @media (max-width: $breakpoint-mobile) {
+      @content;
+    }
   }
 }
 
 @mixin sombra-suave {
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 @mixin sombra-hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
 
 @mixin responsive {
@@ -40,4 +44,3 @@
     }
   }
 }
-
